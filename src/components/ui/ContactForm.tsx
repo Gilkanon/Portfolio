@@ -13,26 +13,26 @@ export function ContactForm() {
     return (
         <form
             onSubmit={handleSubmit}
-            className="w-72 md:w-150 rounded-2xl m-auto mt-15 p-10 flex flex-col items-center justify-around border-dashed border-2  border-neutral-800 "
+            className="mx-5 rounded-2xl my-auto mt-15 p-10 flex flex-col items-center justify-around border-dashed border-2  border-neutral-800 "
         >
-            <label className="text-lg lg:text-xl p-10">Email address</label>
+            <label className="text-lg lg:text-xl p-10">Email address:</label>
             <input
                 id="email"
                 type="email"
                 name="email"
                 placeholder="email"
-                className="bg-neutral-900 h-12 w-70 md:w-80 rounded-2xl hover:ring-1 hover:ring-blue-300 text-center focus:shadow-2xl focus:shadow-blue-300"
+                className="bg-neutral-900 h-12 w-70 md:w-100 rounded-2xl hover:ring-1 hover:ring-blue-300 text-center focus:shadow-2xl focus:shadow-blue-300 focus:bg-neutral-800 transition-shadow duration-500"
             />
             <ValidationError
                 prefix="Email"
                 field="email"
                 errors={state.errors}
             />
-            <label className="text-lg lg:text-xl p-10">Message</label>
+            <label className="text-lg lg:text-xl p-10">Message:</label>
             <textarea
                 id="message"
                 name="message"
-                className="bg-neutral-900 h-60 w-70 md:w-80 p-2 rounded-2xl hover:ring-1 hover:ring-blue-300 text-center focus:shadow-2xl focus:shadow-blue-300"
+                className="bg-neutral-900 h-60 w-70 md:w-3/5 text-start p-2 rounded-2xl hover:ring-1 hover:ring-blue-300 focus:shadow-2xl focus:shadow-blue-300 focus:bg-neutral-800 transition-shadow duration-500"
             />
             <ValidationError
                 prefix="Message"
@@ -42,7 +42,7 @@ export function ContactForm() {
             <button
                 type="submit"
                 disabled={state.submitting}
-                className="w-35 h-15 rounded-xl font-semibold inline-flex items-center justify-center text-neutral-200 bg-blue-500 hover:ring-2 hover:ring-white transition-colors duration-500 ease-in-out text-md lg:text-xl mt-15"
+                className="w-20 md:w-35 h-8 md:h-15 rounded-xl font-semibold inline-flex items-center justify-center text-neutral-200 bg-blue-500 hover:ring-2 hover:ring-white transition-shadow duration-500 ease-in-out text-md lg:text-xl mt-15"
             >
                 Send
             </button>
