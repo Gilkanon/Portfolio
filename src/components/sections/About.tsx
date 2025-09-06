@@ -45,8 +45,8 @@ export function About() {
     return (
         <section id="about">
             <div className="min-h-screen container m-auto p-5 place-content-center ">
-                <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-                    <div className="md:col-span-8 flex-col">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <div className="lg:col-span-8 flex-col">
                         <h2 className="text-3xl lg:text-4xl font-bold mb-4">
                             Hi, I`m Oleksandr Kharchenko, a developer from
                             Ukraine.
@@ -79,7 +79,7 @@ export function About() {
                                         <img
                                             src={tech.logo}
                                             alt={tech.name}
-                                            className="size-22 object-contain  rounded-md hover:animate-wiggle transition-transform duration-500 ease-in-out"
+                                            className="size-15 md:size-22 object-contain  rounded-md hover:animate-wiggle transition-transform duration-500 ease-in-out"
                                         />
                                     </a>
                                 </li>
@@ -87,7 +87,7 @@ export function About() {
                         </ul>
                     </div>
 
-                    <div className="md:col-span-4 flex justify-center md:justify-end">
+                    <div className="lg:col-span-4 flex justify-center lg:justify-end">
                         <div className="size-80 bg-black rounded-full flex items-center justify-center">
                             <img src={cat} className="rounded-full size-80" />
                         </div>

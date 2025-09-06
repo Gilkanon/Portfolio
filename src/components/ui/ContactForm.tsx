@@ -13,7 +13,7 @@ export function ContactForm() {
     return (
         <form
             onSubmit={handleSubmit}
-            className="w-150 rounded-2xl m-auto mt-15 p-10 flex flex-col items-center justify-around border-dashed border-2  border-neutral-800 "
+            className="w-72 md:w-150 rounded-2xl m-auto mt-15 p-10 flex flex-col items-center justify-around border-dashed border-2  border-neutral-800 "
         >
             <label className="text-lg lg:text-xl p-10">Email address</label>
             <input
@@ -21,7 +21,7 @@ export function ContactForm() {
                 type="email"
                 name="email"
                 placeholder="email"
-                className="bg-neutral-900 h-12 w-80 rounded-2xl hover:ring-1 hover:ring-blue-300 text-center focus:shadow-2xl focus:shadow-blue-300"
+                className="bg-neutral-900 h-12 w-70 md:w-80 rounded-2xl hover:ring-1 hover:ring-blue-300 text-center focus:shadow-2xl focus:shadow-blue-300"
             />
             <ValidationError
                 prefix="Email"
@@ -32,7 +32,7 @@ export function ContactForm() {
             <textarea
                 id="message"
                 name="message"
-                className="bg-neutral-900 h-60 w-80 rounded-2xl hover:ring-1 hover:ring-blue-300 text-center focus:shadow-2xl focus:shadow-blue-300"
+                className="bg-neutral-900 h-60 w-70 md:w-80 p-2 rounded-2xl hover:ring-1 hover:ring-blue-300 text-center focus:shadow-2xl focus:shadow-blue-300"
             />
             <ValidationError
                 prefix="Message"
