@@ -5,7 +5,7 @@ import gitHubLightLogo from "../../assets/logos/github-light.svg";
 import { useTheme } from "../../hooks/useTheme";
 
 export function Footer() {
-    const { theme, toggleTheme } = useTheme();
+    const { theme } = useTheme();
 
     return (
         <footer className="flex flex-row justify-around bg-white dark:bg-slate-800 border-t border-dashed border-neutral-800 dark:border-slate-100 py-6 transition-color duration-500">
