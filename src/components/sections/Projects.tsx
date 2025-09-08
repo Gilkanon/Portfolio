@@ -1,7 +1,7 @@
 import nodeLogo from "../../assets/logos/nodejs-original.svg";
 import nestJsLogo from "../../assets/logos/NestJS.svg";
 import dockerLogo from "../../assets/logos/docker-plain.svg";
-import prismaLogo from "../../assets/logos/Prisma.svg";
+import prismaLogo from "../../assets/logos/prisma.png";
 import mysqlLogo from "../../assets/logos/mysql-original.svg";
 import javaScriptLogo from "../../assets/logos/javascript-plain.svg";
 import typeScriptLogo from "../../assets/logos/typescript-plain.svg";
@@ -76,10 +76,10 @@ export function Projects() {
         <section id="projects">
             <div className="min-h-screen container m-auto p-5 justify-around items-center">
                 <div className="grid grid-cols-1 items-center ">
-                    <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+                    <h2 className="text-3xl lg:text-4xl font-bold mb-4 dark:text-slate-100 text-stone-800">
                         Projects
                     </h2>
-                    <p className="text-xl lg:text-2xl text-gray-400 leading-relaxed mb-4 ">
+                    <p className="text-xl lg:text-2x leading-relaxed mb-4 dark:text-slate-400 text-stone-600">
                         In this section, you'll find projects that showcase my
                         backend expertise and my journey into frontend
                         development.

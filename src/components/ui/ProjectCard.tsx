@@ -16,11 +16,11 @@ export function ProjectCard({
     technologies,
 }: ProjectCardProps) {
     return (
-        <div className="grid grid-cols-2 grid-rows-4 items-center justify-between place h-180 w-140 bg-neutral-900 m-5 p-5 rounded-3xl hover:shadow-2xl hover:shadow-blue-300 hover:bg-neutral-800 transition-all duration-500">
-            <h3 className="col-span-2 row-span-1 font-semibold text-xl lg:text-3xl">
+        <div className="grid grid-cols-2 grid-rows-4 items-center justify-between place h-180 w-140 dark:bg-slate-800 bg-white m-5 p-5 rounded-3xl hover:shadow-2xl hover:shadow-amber-500/50 dark:hover:shadow-sky-500 dark:hover:bg-slate-700 transition-all duration-500">
+            <h3 className="col-span-2 row-span-1 font-semibold text-xl lg:text-3xl dark:text-slate-100 text-stone-800">
                 {name}
             </h3>
-            <p className="col-span-2 row-span-1 text-lg lg:text-2xl text-gray-400 mb-4">
+            <p className="col-span-2 row-span-1 text-lg lg:text-2xl dark:text-slate-400 text-stone-600 mb-4">
                 {description}
             </p>
             <div className="col-span-2 flex flex-row flex-wrap gap-2 mt-15">

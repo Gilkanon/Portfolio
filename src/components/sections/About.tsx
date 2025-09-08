@@ -2,12 +2,12 @@ import nodeLogo from "../../assets/logos/nodejs-original.svg";
 import nestJsLogo from "../../assets/logos/NestJS.svg";
 import expressLogo from "../../assets/logos/Expressjs.svg";
 import dockerLogo from "../../assets/logos/docker-plain.svg";
-import prismaLogo from "../../assets/logos/Prisma.svg";
+import prismaLogo from "../../assets/logos/prisma.png";
 import mongoLogo from "../../assets/logos/mongodb-icon.svg";
 import mysqlLogo from "../../assets/logos/mysql-original.svg";
 import postgresqlLogo from "../../assets/logos/postgresql-plain.svg";
 import redisLogo from "../../assets/logos/redis-original.svg";
-import cat from "../../assets/cat.jpg";
+import reactLogo from "../../assets/react.svg";
 
 const technologies = [
     { id: 1, name: "NodeJS", logo: nodeLogo, url: "https://nodejs.org" },
@@ -47,11 +47,11 @@ export function About() {
             <div className="min-h-screen container m-auto p-5 place-content-center ">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                     <div className="lg:col-span-8 flex-col">
-                        <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-                            Hi, I`m Oleksandr Kharchenko, a developer from
-                            Ukraine.
+                        <h2 className="text-3xl lg:text-4xl font-bold mb-4 dark:text-slate-100 text-stone-800">
+                            Hi, I`m Oleksandr Kharchenko, a
+                            JavaScript/TypeScript Developer.
                         </h2>
-                        <p className="text-xl lg:text-2xl text-gray-400 leading-relaxed mb-4">
+                        <p className="text-xl lg:text-2xl dark:text-slate-400 text-stone-600 leading-relaxed mb-4">
                             As a Backend Developer, I have been responsible for
                             designing and implementing scalable backend
                             solutions, focusing clean code principles, and
@@ -65,7 +65,7 @@ export function About() {
                             and optimized application performance through
                             containerization and message-driven communication.
                         </p>
-                        <h3 className="text-xl lg:text-2xl font-bold mb-4">
+                        <h3 className="text-xl lg:text-2xl font-bold mb-4 dark:text-slate-100 text-stone-800">
                             Tech stack:
                         </h3>
                         <ul className="flex flex-row flex-wrap gap-4 p-4 rounded-lg">
@@ -88,8 +88,17 @@ export function About() {
                     </div>
 
                     <div className="lg:col-span-4 flex justify-center lg:justify-end">
-                        <div className="size-80 bg-black rounded-full flex items-center justify-center">
-                            <img src={cat} className="rounded-full size-80" />
+                        <div className="size-80 rounded-full flex items-center justify-center animate-slow-spin">
+                            <a
+                                href="https://react.dev/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img
+                                    src={reactLogo}
+                                    className="rounded-full size-80"
+                                />
+                            </a>
                         </div>
                     </div>
                 </div>
