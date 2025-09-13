@@ -13,7 +13,7 @@ export function ContactForm() {
     return (
         <form
             onSubmit={handleSubmit}
-            className="mx-5 rounded-2xl my-auto mt-15 p-10 flex flex-col items-center justify-around border-dashed border-2 border-neutral-800 dark:border-slate-100 dark:bg-slate-800 bg-white"
+            className="mx-5 rounded-2xl my-auto mt-15 p-10 flex flex-col items-center justify-around dark:bg-slate-800 bg-white"
         >
             <label className="text-lg lg:text-xl p-10 dark:text-slate-100 text-stone-800">
                 Email address:
@@ -23,7 +23,7 @@ export function ContactForm() {
                 type="email"
                 name="email"
                 placeholder="email"
-                className="dark:bg-slate-900 bg-neutral-100 h-12 w-70 md:w-100 rounded-2xl hover:ring-1 dark:hover:ring-sky-300 hover:ring-amber-500/50 text-center dark:text-slate-400 text-stone-600 focus:shadow-2xl dark:focus:shadow-sky-500 focus:shadow-amber-500/50 duration-500"
+                className="dark:bg-slate-900 bg-stone-200 h-12 w-70 md:w-100 rounded-2xl hover:ring-1 dark:hover:ring-sky-300 hover:ring-amber-500/50 text-center dark:text-slate-400 text-stone-600 focus:shadow-2xl dark:focus:shadow-sky-500 focus:shadow-amber-500/50 duration-500"
             />
             <ValidationError
                 prefix="Email"
@@ -36,7 +36,7 @@ export function ContactForm() {
             <textarea
                 id="message"
                 name="message"
-                className="dark:bg-slate-900 bg-neutral-100 h-60 w-70 md:w-3/5 text-start p-2 dark:text-slate-400 text-stone-600 rounded-2xl hover:ring-1 dark:hover:ring-sky-500 hover:ring-amber-500/50 focus:ring-amber-500/50 focus:shadow-2xl dark:focus:shadow-sky-500 focus:shadow-amber-500/50  duration-500"
+                className="dark:bg-slate-900 bg-stone-200 h-60 w-70 md:w-3/5 text-start p-2 dark:text-slate-400 text-stone-600 rounded-2xl hover:ring-1 dark:hover:ring-sky-500 hover:ring-amber-500/50 focus:ring-amber-500/50 focus:shadow-2xl dark:focus:shadow-sky-500 focus:shadow-amber-500/50  duration-500"
             />
             <ValidationError
                 prefix="Message"

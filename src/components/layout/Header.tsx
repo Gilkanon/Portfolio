@@ -1,12 +1,22 @@
+import { useScreenWidth } from "../../hooks/useScreenWidth";
+import { ThemeToggleSwitch } from "../ui/ThemeToggleSwitch";
+
 export function Header() {
+    const width = useScreenWidth();
     return (
         <header className="sticky top-0 flex flex-row w-full h-22 m-auto bg-white dark:bg-slate-800 items-center p-4 2xl:px-80 border-b border-dashed border-neutral-800 dark:border-slate-100 transition-color duration-500 z-50">
             <nav className="flex flex-row w-full items-center justify-between">
                 <div className="text-xl md:text-2xl font-bold dark:text-slate-100 text-stone-800">
-                    Oleksandr Kharchenko
+                    <a href="#main">Oleksandr Kharchenko</a>
                 </div>
 
                 <ul className="flex space-x-6">
+                    {width > 768 ? (
+                        <li className="flex items-center">
+                            <ThemeToggleSwitch />
+                        </li>
+                    ) : null}
+
                     <li>
                         <a
                             href="#about"
